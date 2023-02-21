@@ -10,9 +10,7 @@ from netkiller.docker import *
 from compose.devops import devops
 from compose.demo import demo
 # from libexec.portainer import portainer
-
-# print(test)
-# exit()
+# from compose.devops.zentao import zentao
 
 if __name__ == "__main__":
     try:
@@ -23,6 +21,7 @@ if __name__ == "__main__":
         # docker.environment(development)
         # docker.environment(logging)
         docker.environment(devops)
+        # docker.environment(compose)
         # docker.environment(portainer)
         docker.environment(demo)
         docker.main()
