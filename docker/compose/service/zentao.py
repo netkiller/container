@@ -22,9 +22,7 @@ zentao.hostname('zentao.netkiller.cn')
 zentao.environment({'TA':'Asia/Shanghai','MYSQL_ROOT_PASSWORD':'123456'})
 zentao.ports(['80:80']) # ,'443:443'
 zentao.volumes([
-    '/www/zentaopms:/www/zentaopms',
-    '/opt/zentao/logs:/var/log/zentao',
-    '/opt/zentao/data:/var/opt/zentao'
+    '/opt/zentao/zentaopms:/www/zentaopms'
 ])
 # .privileged(True)
 
