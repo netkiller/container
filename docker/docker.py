@@ -16,6 +16,7 @@ try:
 
     # from libexec.portainer import portainer
     # from compose.devops.zentao import zentao
+    from compose.homeassistant import homeassistant
 
 except ModuleNotFoundError as err:
     print("pip install netkiller-devops, %s" % (err))
@@ -30,7 +31,7 @@ if __name__ == "__main__":
         # docker.environment(development)
         # docker.environment(logging)
         docker.environment(devops)
-        # docker.environment(compose)
+        docker.environment(homeassistant)
         # docker.environment(portainer)
         docker.environment(demo)
         docker.main()
