@@ -15,19 +15,18 @@ try:
     from compose.demo import demo
 
     # from libexec.portainer import portainer
-    # from compose.devops.zentao import zentao
+    from compose.database import database
     from compose.homeassistant import homeassistant
 
 except ModuleNotFoundError as err:
     print("pip install netkiller-devops, %s" % (err))
-
 
 if __name__ == "__main__":
     try:
         docker = Docker()
         # docker.env({'DOCKER_HOST':'ssh://root@192.168.30.13','COMPOSE_PROJECT_NAME':'experiment'})
         # docker.sysctl({"vm.max_map_count": "262144"})
-        # docker.environment(experiment)
+        docker.environment(database)
         # docker.environment(development)
         # docker.environment(logging)
         docker.environment(devops)
