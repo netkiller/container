@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 import sys
 
-sys.path.insert(0, "/Users/neo/workspace/devops")
-sys.path.insert(0, "/Users/neo/Github/devops")
+sys.path.insert(0, ".")
+sys.path.insert(1, "/Users/neo/workspace/devops")
+sys.path.insert(2, "/Users/neo/Github/devops")
+sys.path.insert(3, "/srv/devops")
 
 try:
     from netkiller.docker import *
