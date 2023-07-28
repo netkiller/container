@@ -22,6 +22,7 @@ try:
 
 except ModuleNotFoundError as err:
     print("pip install netkiller-devops, %s" % (err))
+    exit()
 
 if __name__ == "__main__":
     try:
